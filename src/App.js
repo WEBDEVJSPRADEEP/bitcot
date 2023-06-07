@@ -185,11 +185,14 @@ export default function Data() {
       email: inputs.email,
       category: inputs.category,
     };
-    // let todo = JSON.parse(obj);
-    // let lastData = todo.push(data1);
-    // setNewData(lastData);
-    // console.log(lastData);
+
     setData([...data, obj]);
+    setInputs({
+      name: "",
+      email: "",
+      number: "",
+      category: "",
+    });
   };
 
   return (
